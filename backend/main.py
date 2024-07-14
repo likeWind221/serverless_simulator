@@ -129,7 +129,7 @@ async def get_status():
 @app.get('/api/result')
 async def get_result():
   # 获取当前文件路径
-  current_dir = os.path.dirname(os.path.realpath(sys.argv[0]))
+  current_dir = os.getcwd()
   # 查找result文件夹
   result_dir = os.path.join(current_dir,'result')
   # 判断result文件夹是否存在
@@ -164,7 +164,7 @@ async def get_result():
 @app.post('/api/app_status')
 async def get_app_status(input_data: AppStatus):
   # 获取当前文件路径
-  current_dir = os.path.dirname(os.path.realpath(sys.argv[0]))
+  current_dir = os.getcwd()
   # 查找result文件夹
   result_dir = os.path.join(current_dir,'result')
   # 判断result文件夹是否存在
@@ -188,7 +188,7 @@ async def get_app_status(input_data: AppStatus):
 @app.delete('/api/delete_result')
 async def delete_result(input_data: AppStatus):
   # 获取当前文件路径
-  current_dir = os.path.dirname(os.path.realpath(sys.argv[0]))
+  current_dir = os.getcwd()
   # 查找result文件夹
   result_dir = os.path.join(current_dir,'result')
   # 判断result文件夹是否存在

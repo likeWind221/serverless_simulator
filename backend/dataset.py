@@ -7,7 +7,7 @@ import os
 class Dataset:
   def __init__(self,day_index=1):
     # 当前工作目录
-    self.current_dir = os.path.dirname(os.path.realpath(sys.argv[0]))
+    self.current_dir = os.getcwd()
     # 数据集目录
     self.data_dir = os.path.join(self.current_dir, 'data')
     # 结果目录
