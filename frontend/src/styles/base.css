@@ -1,0 +1,68 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: rgb(51, 54, 57);
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+
+  --un-bg-opacity:1;
+  --vt-c-background-light-1: rgb(245 246 251 / var(--un-bg-opacity));
+
+  --theme-primary-color:rgb(49, 108, 114);
+  --theme-shadow-color: rgb(49, 108, 114,0.2);
+  --font-size-rank-1:16px;
+  --font-size-rank-2:14px;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+html,body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family:”Microsoft YaHei”,Arial,Helvetica,sans-serif,”宋体”;
+}
+
+#app{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+  'sidebar header'
+  'sidebar main';
+  grid-template-columns: 200px 1fr ;
+  grid-template-rows: 48px 1fr;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--font-size-rank-2);
+  color: white;
+  font-weight: 500;
+}
