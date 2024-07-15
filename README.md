@@ -8,7 +8,7 @@
 
 ### 下载可执行程序
 
-会放到release下
+会放到release下，后端源码可能也需要下载与exe在同一目录下。
 
 ### 下载数据集
 
@@ -19,21 +19,21 @@
 https://azurepublicdatasettraces.blob.core.windows.net/azurepublicdatasetv2/azurefunctions_dataset2019/azurefunctions-dataset2019.tar.xz
 ### 运行后端服务
 
-运行/backend/目录下的[main.py](backend/main.py)文件，启动后端服务。
+运行/backend/目录下的[main.exe](backend/main.exe)文件，启动后端服务。
 
 ### 访问前端网址
 
-打开浏览器，访问在线网址：http://47.120.58.141:9000/
+打开浏览器，访问在线网址：https://likewind221.top:9000/
 
 ## 源代码
 
-### 安装依赖
+### 安装与启动
 python:
 > pip install -r requirements.txt
 
 Vue.js:
-> npm install
-
+> npm i
+> npm run dev
 
 ### 技术栈
 前端：Vue.js + Element Plus + TypeScript  
