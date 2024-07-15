@@ -71,7 +71,7 @@ const listLabel: any = {
   'invocateCount': '总调用次数',
   'model_run_time': '模型运行时间(秒)',
   'without_first': '冷启动次数(不计首次)',
-  'memWasteTime': '内存浪费总时间(秒)',
+  'memWasteTime': '内存浪费总时间(分钟)',
 }
 
 const fetchList = async () => {
